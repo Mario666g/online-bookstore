@@ -8,7 +8,7 @@ import { Book } from './common/book';
 })
 export class AppComponent {
   
-  books: Book[] = [
+  /*books: Book[] = [
     {
       sku: "text-100",
       name: "C Programming Languaje",
@@ -43,6 +43,6 @@ export class AppComponent {
       updateOn: null,
     }
     
-  ]
+  ]*/
 
 }
