@@ -6,11 +6,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 
 import in.bushansirgur.onlinebookstore.entity.BookCategory;
 
+@RepositoryRestResource(collectionResourceRel="bookCateogry", path="book-category")
+public interface BookCategoryRepository extends JpaRepository<BookCategory, Long>{
 
-
-@RepositoryRestResource(collectionResourceRel="bookCategory", path="book-category")
-public interface BookCategoryRepository extends JpaRepository<BookCategory, Long> {
-
-	
-	
 }

@@ -1,7 +1,7 @@
 package in.bushansirgur.onlinebookstore.entity;
 
 import java.math.BigDecimal;
-import java.sql.Date;
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -22,11 +22,10 @@ import lombok.ToString;
 @Getter
 @ToString
 public class Book {
-
+	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
-	
 	
 	private String sku;
 	
@@ -39,7 +38,7 @@ public class Book {
 	
 	@Column(name="image_url")
 	private String imageUrl;
-		
+	
 	private boolean active;
 	
 	@Column(name="units_in_stock")
@@ -49,12 +48,12 @@ public class Book {
 	private Date createdOn;
 	
 	@Column(name="last_updated")
-	private Date updatedOn;	
-	
-	
+	private Date updatedOn;
+
 	@ManyToOne
 	@JoinColumn(name="category_id", nullable=false)
 	private BookCategory category;
 	
+	//setters and getters if you are not using lombok
 	
 }

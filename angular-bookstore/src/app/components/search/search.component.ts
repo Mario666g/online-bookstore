@@ -10,15 +10,11 @@ export class SearchComponent implements OnInit {
 
   constructor(private _router: Router) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
-
-  searchBooks(keyword:string){
+  searchBooks(keyword: string){
     console.log('keyword', keyword);
     this._router.navigateByUrl('/search/'+keyword);
   }
-
-
-
 }

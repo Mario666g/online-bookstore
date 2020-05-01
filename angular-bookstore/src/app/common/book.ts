@@ -1,6 +1,5 @@
 export class Book {
 
-    id: number;
     sku: string;
     name: string;
     description: string;
@@ -9,6 +8,6 @@ export class Book {
     active: boolean;
     unitsInStock: number;
     createdOn: Date;
-    updateOn: Date;
+    updatedOn: Date;
     
 }
