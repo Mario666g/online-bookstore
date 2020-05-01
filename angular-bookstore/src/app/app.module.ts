@@ -9,9 +9,11 @@ import { BookListComponent } from './components/book-list/book-list.component';
 import { BookService } from './services/book.service';
 
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { BookDetailsComponent } from './components/book-details/book-details.component';
 
 
 const routes: Routes = [
+  { path: 'books/:id', component: BookDetailsComponent },
   { path: 'books', component: BookListComponent },
   { path: 'category/:id', component: BookListComponent },
   { path: '', redirectTo: '/books', pathMatch: 'full' },
@@ -23,7 +25,8 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     BookListComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    BookDetailsComponent
   ],
   imports: [
     BrowserModule,
